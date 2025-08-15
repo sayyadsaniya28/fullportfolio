@@ -15,7 +15,7 @@ router.post('/registration', upload.single('profilePhoto'), registerAdmin);
 // router.get('/getalldata', getAllData);
 
 // PUT /admin/update/:id (requires JWT)
-router.put('/update/:id', protect, upload.single('profilePhoto'), updateAdmin);
+router.put('/update/:id', upload.single('profilePhoto'), updateAdmin);
 
 export default router;
 
